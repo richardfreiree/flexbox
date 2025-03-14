@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>alow</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .container{
+            background-color: #f332;
+            height: 400px;
+            margin: 0 auto;
+            display: flex; /* A condição flex deixa a divisões filhos flexiveis e fica em inline */
+            justify-content:center; /*centralizando o display flex */
+            flex-direction: row-reverse;
+            align-items: stretch;
+            flex-wrap: wrap;
+            gap: 50px   ;
+        }
+
+        .filho {
+            width: 100px;
+            height: 150px;
+            background-color: blueviolet;
+            margin-right: 100px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> <!-- div pai que abranje todas as divs filhos, o flex é colocado nela -->
+        <div class="filho">Filho 1</div>
+        <div class="filho">filho 2</div>
+        <div class="filho">filho 3</div>
+        <div class="filho">filho 3</div>
+        <div class="filho">filho 3</div>
+        <div class="filho">filho 3</div>
+        <div class="filho">filho 3</div>
+        
+    </div>
+</body>
+</html>
